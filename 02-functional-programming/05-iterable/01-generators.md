@@ -1,3 +1,4 @@
+
 # Generator functions
 Generator functions are functions that behave like iterables. For example, we could iterate over the following list and
 print its results
@@ -60,7 +61,7 @@ Haskell
 However, if we would break this loop early, we see that the `languages` function didn't actually fully execute at once
 and collected its 'yield' values into some collection which it then returned (in which case we would expect all the
 print statement to have executed):
-```python
+```python 
 for language in languages():
     print(language)
     if language == "Python":
